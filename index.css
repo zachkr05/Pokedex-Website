@@ -1,0 +1,52 @@
+
+
+body{
+    
+    background-color: aliceblue;
+}
+
+.main-header{
+
+    text-align:center;
+    font-family: 'Courier New', monospace;
+    margin:80px;
+
+
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f1f1;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-8px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr))
+}
